@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fibonacci Performance</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">    
+</head>
+
+<body>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="js/epoch.js"></script>
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1></h1>
+            <h1 class="display-4">Fibonacci Performance</h1>
+        </div>
+        <div class="col-12 text-left pt-3">
+            <label> Entrada</label>
+            <input type="number" min="0" max="50" class="form-control " id="input" style="text-align: center" />
+            <div class="invalid-feedback">
+                Insira um número menor que 46 e maior que 0.
+              </div>
+        </div>
+        
+
+        <div class="col-3  offset-1">
+            <button type="button" class="btn btn-secondary btn-md btn-block" id="submit_button">
+                <span id='isloading' class="d-none" >
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...</span>
+                <span id='calc'>Calcular</span>
+                </button>
+              
+              </button>
+        </div>
+        
+        <div class="col-3  offset-3">
+            <button type="button" class="btn btn-secondary btn-md btn-block" id="reset_button">Limpar</button>
+        </div>
+        <hr>
+
+        <div class="col-3 text-center pt-3">
+            <label>Tempo Recursivo</label>
+            <input min="0" class="form-control" disabled="disabled" id="recursive_result"
+                style="text-align: center"/>
+        </div>
+        <div class="col-4 text-center  pt-3">
+            <label>Resultado</label>
+            <input min="0" class="form-control" disabled="disabled" id="result"
+                style="text-align: center"/>
+        </div>
+       
+        <div class="col-4 text-center pt-3">
+            <label>Tempo com programação dinâmica</label>
+            <input min="0" class="form-control" disabled="disabled" id="dynamic_result"
+                style="text-align: center"/>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="js/index.js"></script>
+
+</html>
